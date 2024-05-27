@@ -72,7 +72,7 @@ async def callback_handler(client, query):
             "1. Send me the text file containing links of the media you want to download.\n"
             "2. Wait for me to process the link and provide you with the download options.\n"
             "3. Select the desired download option and enjoy your media!",
-            parse_mode="markdown"
+            parse_mode="markdown2"
         )
     elif query.data == "supported_platforms":
         await query.answer("🌐 Supported Platforms 🌐")
