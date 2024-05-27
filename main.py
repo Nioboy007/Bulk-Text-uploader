@@ -4,7 +4,7 @@ import json
 import subprocess
 from pyrogram.types.messages_and_media import message
 import helper
-from enum import Enum
+from pyrogram import enums
 from pyromod import listen
 from pyrogram.types import Message
 import tgcrypto
