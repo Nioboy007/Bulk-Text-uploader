@@ -4,6 +4,7 @@ import json
 import subprocess
 from pyrogram.types.messages_and_media import message
 import helper
+from enum import Enum
 from pyromod import listen
 from pyrogram.types import Message
 import tgcrypto
@@ -72,7 +73,7 @@ async def callback_handler(client, query):
             "1. Send me the text file containing links of the media you want to download.\n"
             "2. Wait for me to process the link and provide you with the download options.\n"
             "3. Select the desired download option and enjoy your media!",
-            parse_mode="markdown2"
+            parse_mode=enums.ParseMode.MARKDOWN
         )
     elif query.data == "supported_platforms":
         await query.answer("🌐 Supported Platforms 🌐")
