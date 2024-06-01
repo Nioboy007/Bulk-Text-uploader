@@ -56,8 +56,7 @@ async def start_command(client, message):
                     InlineKeyboardButton("Supported Platforms 🌐", callback_data="supported_platforms"),
                 ],
                 [
-                    InlineKeyboardButton("About ℹ️", callback_data="about"),
-                    InlineKeyboardButton("Feedback 📝", callback_data="feedback"),
+                    InlineKeyboardButton("Updates", callback_url="https://t.me/botio_devs"),
                 ],
             ]
         )
