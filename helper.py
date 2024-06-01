@@ -7,6 +7,8 @@ import aiohttp
 import concurrent.futures
 from pyrogram.types import Message
 from pyrogram import Client
+from KHABAR.p_bar import progress_bar
+
 
 def duration(filename):
     result = subprocess.run(["ffprobe", "-v", "error", "-show_entries",
